@@ -1,0 +1,59 @@
+<idea-plugin>
+  <id>com.apptorium.TeaCode-IJP-Helper</id>
+  <name>TeaCode IntelliJ Platform Helper</name>
+  <version>1.1.2</version>
+  <vendor url="http://www.apptorium.com">Apptorium</vendor>
+
+  <description><![CDATA[
+      <b>TeaCode IntelliJ Helper</b>
+      <br><br>
+      <p>
+          Provides integration with TeaCode <a href="https://www.apptorium.com/teacode">www.apptorium.com/teacode</a>
+      </p>
+      <br>
+      <p>
+          TeaCode is a powerful app, created to write code super fast by expanding short, dynamic code templates into the real code. It comes with a simple variable-based language that supports subexpressions, optional patterns and filters. Creating new expanders is extremely easy.  TeaCode supports native editors (Xcode, TextMate, Coda, etc.) as well as Atom, Sublime Text, VSC and JetBrains IDEs (PHPStorm, AppCode, etc.)
+      </p>
+      <img src="https://www.apptorium.com/public/products/teacode/shared/preview.gif" alt="How it works" />
+      <br><br>
+      <b>How to use it</b>
+      <ol>
+          <li>
+              Install TeaCode from <a href="https://www.apptorium.com/teacode">www.apptorium.com/teacode</a>.
+          </li>
+          <li>
+              Open TeaCode
+          </li>
+          <li>
+              Write an expression (for example <code>-f helloWorld</code>) and press ctrl+cmd+e
+              (notice that shortcut is different than the shortcut for native macOS
+              apps)
+          </li>
+      </ol>
+      <br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Android Studio bug fix.<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="162.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="TeaCode-IJP-Helper.Expand" class="Action.ExpandAction" text="Expand with TeaCode" description="Expand text with TeaCode.">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta E"/>
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>
