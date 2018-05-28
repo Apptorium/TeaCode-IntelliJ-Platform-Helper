@@ -85,7 +85,7 @@ public class ExpandAction extends AnAction {
         VirtualFile file = event.getData(PlatformDataKeys.VIRTUAL_FILE);
         String extension = file.getExtension();
         String text = getTextFromBeginningOfLineToCursor();
-        String[] command = { "osascript", "-l", "JavaScript", "-e", "Application(\\\"TeaCode\\\").expandAsJson(\\\"\" + re.escape(text) + \"\\\", { \\\"extension\\\": \\\"\" + re.escape(extension) + \"\\\" })" };
+        String[] command = { "osascript", "-l", "JavaScript", "-e", "Application('TeaCode').expandAsJson('" + escapeString(text) + "', { 'extension': '" + escapeString(extension) + "' })" };
         executeCommand(command);
     }
 
