@@ -1,14 +1,14 @@
 <idea-plugin>
   <id>com.apptorium.TeaCode-IJP-Helper</id>
   <name>TeaCode IntelliJ Platform Helper</name>
-  <version>1.1.2</version>
+  <version>1.2.0</version>
   <vendor url="http://www.apptorium.com">Apptorium</vendor>
 
   <description><![CDATA[
       <b>TeaCode IntelliJ Helper</b>
       <br><br>
       <p>
-          Provides integration with TeaCode <a href="https://www.apptorium.com/teacode">www.apptorium.com/teacode</a>
+          Provides integration with TeaCode <a href="https://www.teacode.app">www.teacode.app</a>
       </p>
       <br>
       <p>
@@ -19,22 +19,20 @@
       <b>How to use it</b>
       <ol>
           <li>
-              Install TeaCode from <a href="https://www.apptorium.com/teacode">www.apptorium.com/teacode</a>.
+              Install TeaCode from <a href="https://www.teacode.app">www.teacode.app</a>.
           </li>
           <li>
               Open TeaCode
           </li>
           <li>
-              Write an expression (for example <code>-f helloWorld</code>) and press ctrl+cmd+e
-              (notice that shortcut is different than the shortcut for native macOS
-              apps)
+              Write an expression (for example <code>-f helloWorld</code>) and press ctrl+alt+e.
           </li>
       </ol>
       <br>
     ]]></description>
 
   <change-notes><![CDATA[
-      Android Studio bug fix.<br>
+      Support for new teacode.<br>
     ]]>
   </change-notes>
 
