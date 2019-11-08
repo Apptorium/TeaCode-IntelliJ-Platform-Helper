@@ -113,7 +113,7 @@ public class ExpandAction extends AnAction {
             }
             String json = output.toString();
 
-            if (json.contains("null")) {
+            if (json == "null") {
                 return;
             }
             if (json.isEmpty()) {
